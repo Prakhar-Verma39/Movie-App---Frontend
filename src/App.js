@@ -48,7 +48,7 @@ function App() {
 
       const singleMovie = response.data;
       
-      console.log(singleMovie);
+      // console.log(singleMovie);
     
       setMovie(...singleMovie);
 
