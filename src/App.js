@@ -62,7 +62,7 @@ function App() {
 
   }
 
-  // 'getMovies' function is executed when the app component first loads.
+  // 'getMovies' function is executed when 'the' app component first loads.
   useEffect(() => {
     getMovies();
   }, [])
