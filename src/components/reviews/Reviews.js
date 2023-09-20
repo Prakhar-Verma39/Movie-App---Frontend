@@ -3,8 +3,9 @@ import api from '../../api/axiosConfig';
 import {useParams} from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import ReviewForm from '../reviewForm/ReviewForm';
-
 import React from 'react';
+
+const baseUrl = process.env.REACT_APP_BASE_URL || "http://localhost:5000"
 
 const Reviews = ({getMovieData,movie,reviews,setReviews}) => {
 
@@ -23,7 +24,7 @@ const Reviews = ({getMovieData,movie,reviews,setReviews}) => {
 
         try{
 
-        const response = await api.post("http://localhost:5000/api/v1/reviews",{reviewBody:rev.value, imdbId: movieId});
+        const response = await api.post(`${baseUrl}/api/v1/reviews`,{reviewBody:rev.value, imdbId: movieId});
 
         const updateReviews = [{body:rev.value}, ...reviews];
 
