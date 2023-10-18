@@ -9,6 +9,7 @@ import Header from './components/header/Header';
 import Trailer from './components/trailer/Trailer';
 import Reviews from './components/reviews/Reviews';
 import NotFound from './components/notFound/NotFound';
+import Spinner from "./components/spinner/Spinner"
 
 
 const baseUrl = process.env.REACT_APP_BASE_URL || "http://localhost:5000"
@@ -83,6 +84,13 @@ function App() {
     </div>
   );
   }
+else {
+  return (
+    <div className="App">
+      <Spinner/>
+    </div>
+  )
+}
 }
 
 export default App;
