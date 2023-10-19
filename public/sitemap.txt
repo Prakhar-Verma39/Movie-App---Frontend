@@ -1,0 +1,4 @@
+https://muvie.pages.dev/
+https://muvie.pages.dev/watchList
+https://muvie.pages.dev/Reviews/*
+https://muvie.pages.dev/Trailer/*
